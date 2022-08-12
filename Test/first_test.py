@@ -48,7 +48,7 @@ def shortener(string):
 
 
     """
-   return ' '.join(map(lambda i: i if len(i) < 6 else i[:6]+'*',string.split()))
+    return ' '.join(map(lambda i: i if len(i) <= 6 else i[:6]+'*',string.split()))
     
     #  ...wite your code here
 
@@ -66,10 +66,10 @@ def compare_ends(words):
     
     """
     #return ','.join(map(lambda i: i if len(i) <= 2 and i[0]!=i[-1] else , words)) Хотел решить лямдой, но выдает ошибку 
-    string = ''
+    summ = 0
     for i in words:
-        if len(i) > 2 and i[0]==i[-1]:
-            string +=' ' + i
-    return string.split()
+        if len(i) >= 2 and i[0]==i[-1]:
+            summ += 1
+    return summ
     #  ...wite your code here
 
