@@ -8,7 +8,8 @@ def spam(number):
     повторяется столько раз, сколько параметров передано. Она уже написана,
     но не работает. Любым способом заставьте ее работать.
     '''
-    return ['bulochka' for i in range(number+1)]
+   
+    return 'bulochka' * number
 
 
 def my_sum(list_of_numbers):
@@ -21,7 +22,13 @@ def my_sum(list_of_numbers):
     Не использовать встроенные функции суммирования.
     
     """
-    pass
+
+     sum = 0
+    for x in list_of_numbers:
+        sum += x
+    return sum
+
+
     #  ...wite your code here
 
 
@@ -41,7 +48,8 @@ def shortener(string):
 
 
     """
-    pass
+   return ' '.join(map(lambda i: i if len(i) < 6 else i[:6]+'*',string.split()))
+    
     #  ...wite your code here
 
 
@@ -55,8 +63,13 @@ def compare_ends(words):
     Функция получает на вход массив строк. Вернуть надо количество строк,
     которые не короче двух символов и у которых первый и последний
     символ совпадают.
-
+    
     """
-    pass
+    #return ','.join(map(lambda i: i if len(i) <= 2 and i[0]!=i[-1] else , words)) Хотел решить лямдой, но выдает ошибку 
+    string = ''
+    for i in words:
+        if len(i) > 2 and i[0]==i[-1]:
+            string +=' ' + i
+    return string.split()
     #  ...wite your code here
 
