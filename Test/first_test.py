@@ -23,7 +23,7 @@ def my_sum(list_of_numbers):
     
     """
 
-     sum = 0
+    sum = 0
     for x in list_of_numbers:
         sum += x
     return sum
