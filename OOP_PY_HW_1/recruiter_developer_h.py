@@ -8,9 +8,12 @@ class Recruiter(eh.Employee):
 		return print(self.__class__.__name__,':',self.name,', I come to the office and start to hiring.')
 
 class Developer(eh.Employee):
-	def __init__(self, name, salary):
-		super().__init__(name, salary)
-		self.tech_stack = []
+	def __init__(self, name, salary, tech_stack):
+		super().__init__(name, salary, tech_stack)
+		self.tech_stack = tech_stack
+
+	def printDev(self):
+		print(self.name + ' | ' + str(self.salary) + ' | ' + self.tech_stack)
 
 	def work(self):
 		return print(self.__class__.__name__,':',self.name,', I come to the office and start to coding.')
