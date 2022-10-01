@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Задание 5 */
+.block{
+    background-color: #424242;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 100px;
+}
+
+.min-block{ 
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    
+}
+.min-block1{
+    background-color: aqua;
+}
+
+.min-block2{
+    background-color: blueviolet;
+    margin: 0 0 0 150px;
+}
+
+.min-block3{
+    background-color: #ff0000;
+    margin: 0 0 0 300px;
+}
+
+.min-block4{
+    background-color: #00ff15;
+    margin: 150px 0 0 300px;
+}
+
+.min-block5{
+    background-color: #ff00c8;
+    margin: 150px 0 0 150px;
+}
+
+.min-block6{
+    background-color: rgb(255, 140, 0);
+    margin: 150px 0 0 0;
+}
+
+.min-block7{
+    background-color: rgb(38, 0, 255);
+    margin: 300px 0 0 0;
+}
+
+.min-block8{
+    background-color: rgb(238, 255, 0);
+    margin: 300px 0 0 150px;
+}
+
+.min-block9{
+    background-color: black;
+    margin: 300px 0 0 300px;
+}
+
+/* Задание 6 */
+.header6{
+    display: flex;
+    background-color: rgb(148, 239, 255);
+    box-shadow: 6px 6px 30px rgb(0, 0, 0);
+    width: 50%;
+    height: 50px;
+    margin: auto auto 100px auto; 
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.searchs{       
+    width: 90px;
+    margin-top: 0;
+    background-color: rgb(148, 239, 255);
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2) inset;
+    padding: 15px 0 0 25px;
+    border-radius: 10%;
+}
+
+.searchs:hover{
+    background-color: rgb(140, 210, 255);
+}
+
+.dropdown{        
+    display: inline-block;
+}
+
+.header-menu-btn{
+    background-color: rgb(250, 131, 230);
+    color: black;
+    box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2) inset;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 10%;
+}
+
+.header-menu-btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+.dropdown-child{
+    display: none;
+    background-color: blanchedalmond;
+    min-width: 50px;
+}
+
+.dropdown-child:hover{
+    background-color: black;
+}
+
+.dropdown-child a{
+    color: black;
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-child:hover a{
+    color: aliceblue;
+}
+
+.dropdown:hover .dropdown-child{
+    display: block;
+}
+
+/* Задание 7 */
+
+.div-galary{
+    display: flex;
+    width: 40%;
+    padding: 20px 20px 0px 20px;
+    margin: auto auto 100px auto;
+    background-color: beige;
+    box-shadow: 0 0 20px 0;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+.comic-book-cover{
+    width: 200px;
+    height: 300px;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 0 rgba(0, 253, 169, 0.726);
+    background-color: #00ff15;
+    margin-bottom: 20px;
+}
+
+img{
+    border-radius: 7px;
+    width: 200px;
+    height: 300px;
+}
+
+/* Задание 8 */
+
+.main-cards{
+    display: flex;
+    width: 350px;
+    height: 570px;
+    margin: auto auto 100px auto;
+    padding-top: 20px;
+    padding-left: 50px;
+    box-shadow: 0 0 5px 0;
+}
+
+.div-card{
+    display: flex;
+    width: 300px;
+    height: 550px;
+    box-shadow: 0 0 5px 0;   
+    transition: all.5s ease;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.div-card:hover{
+    box-shadow: 0 0 10px 0;
+}
+
+.avatar-img{
+    width: 280px;
+    height: 300px;
+    background-color: #ebebeb;
+    border-radius: 5px;
+    margin: 10px 10px;
+    
+}
+
+.avatar-img img{
+    width: 280px;
+    height: 300px;
+    border-radius: 5px;
+    transition: all.200ms ease;
+}
+
+.avatar-img img:hover{
+    transform: rotate(20deg)
+}
+
+.avatar-text{
+    text-align: center;
+}
+
+.avatar-text h2{
+    
+}
+
+.avatar-text h2:hover{
+    transition: all.200ms ease;
+    transform: scale(115%);
+    
+}
+
+.avatar-text h2:hover{
+    transition: all.3ms ease;
+    color: #ff0000;
+}
+
+
+.button-like{ 
+    margin: 0 auto;
+    display: block;  
+    width: 70px;
+    height: 30px;
+    border: none;
+    color: aliceblue;
+    background: #000000;
+    cursor: pointer;
+    justify-content: center;
+    animation-duration: 2s;
+}
+
+.button-like:hover{
+    width: 95%;
+}
+.button-like:hover{
+    transition: all.200ms ease;
+    color: #000000;
+    background-color: aquamarine;
+    
+}
+
+/* Задание 9 */
+
+form{
+    display: flex;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    margin: auto auto 100px auto;
+    background-color: beige;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+}
+
+textarea{
+    width: 300px;
+    height: 150px;
+}
+
+input, textarea{
+    padding-left:10px;
+    padding-right: 10px;
+    border: 1px solid #141414;
+    margin:auto auto 10px auto;
+    border-radius: 5px;
+    outline: none;
+    background-color: antiquewhite;
+    color: #424242;
+}
+
+.button-form{ 
+    color: #ebebeb;
+    display: block;
+    top: 0;
+    right: 0px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    margin: 20px auto 10px auto;
+    background: #c50202;
+    cursor: pointer;
+}
+
+
+/* Задание 11 */
+
+.conteiner{
+    width: 960px;
+    margin: auto auto 200px auto;
+    height: 500px;
+    background-color: antiquewhite;
+    box-shadow: 0px 0px 15px 1px;
+}
+
+.red{
+    width: 99.80%;
+    height: 15%;
+    background-color: #ff0000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.blue{
+    float: left;
+    width: 55%;
+    height: 80%;
+    
+    border-radius: 5px;
+    margin-right: 2.5%;
+    background-color: rgb(0, 26, 255);
+}
+
+.yellow{
+    float: left;
+    width: 20%;
+    height: 80%;   
+    border-radius: 5px;
+    margin-right: 2.5%;
+    background-color: rgb(182, 202, 0);
+}
+
+.green{
+    float: left;
+    width: 20%;
+    height: 80%;   
+    border-radius: 5px;   
+    background-color: rgb(19, 241, 11);
+}
+
+.gray{
+    float: left;
+    width: 99.80%;
+    height: 15%;
+    background-color: #ff0000;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: rgb(68, 68, 68);
+}
+
+/* Задание 12 */
+
+.div12{
+    width: 600px;
+    height: 100px;
+    margin: auto auto 200px auto;
+}
+
+.content{
+    background-color: #c50202;
+}
+
+.sidebar{
+    
+    background-color: aquamarine;
+}
+
+.content, 
+    .sidebar{
+        width: 200px;
+        height: 100px;
+    }
+
+@media screen and (min-width: 768px) {
+    .content{
+        width: 400px;   
+    }
+    
+    .sidebar{
+        width: 100px;  
+         
+    }
+
+    .content, 
+    .sidebar{
+        float: left; 
+        height: 100px;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content, 
+    .sidebar{
+        width: 200px;
+        height: 100px;
+        margin: auto;
+    }
+}
+
+/* Задание 13 */
+
+.div13{
+    width: 250px;
+    height: 400px;
+    background-color: antiquewhite;
+    box-shadow: 0 0 10px 1px;
+    margin: auto auto 200px auto;
+    padding-top: 15px;
+}
+
+.violet{  
+    background-color: #ff00c8;  
+}
+
+.brown{
+    background-color: #692700; 
+}
+
+.orange{
+    background-color: #ff7b00; 
+}
+
+.violet,
+.brown,
+.orange{
+    
+    margin: 15px auto auto auto;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .violet{  
+        height: 30%;  
+    }
+    
+    .brown{
+        height: 30%; 
+    }
+    
+    .orange{
+        height: 20%; 
+    }
+
+    .violet,
+    .brown,
+    .orange{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .violet{  
+        height: 30%;  
+        width: 95%;
+    }
+
+    .brown{
+        width: 30%;
+    }
+    
+    .orange{
+        width: 60%;
+    }
+    
+    .brown,
+    .orange{
+        margin-left: 8px;
+        float: left;
+        height: 60%;
+    }
+}

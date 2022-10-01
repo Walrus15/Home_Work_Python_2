@@ -1,0 +1,150 @@
+a{
+  text-decoration: none;
+  transition: all.6s ease;
+}
+
+a:hover{
+  color: #c00000;
+  transition: all.4s ease;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  background-color: #ffceeb;
+  float: left;
+}
+
+/*Стили для шапки*/
+
+header{
+  position: fixed;
+  width: 97%;
+  float: left;
+  padding: 1%;
+  background-color: aqua;
+  box-shadow: 6px 6px 20px rgba(198, 197, 255, 0.74);
+}
+
+.div-logo{
+  font-family: 'Passions Conflict', cursive;
+  width: 40%;
+  float: left;
+}
+
+.div-logo, a{
+  color: #030303;
+}
+
+.logo{
+  color: #ff0000;
+}
+
+.div-search{
+  width: 20%;
+  float: left;
+  padding-top: 15px;
+}
+
+.req-header{
+  font-family: 'Rubik Dirt', cursive;
+  width: 40%;
+  float: left;
+  text-align: right;
+  padding-top: 20px;
+}
+
+
+
+form {
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+  input {
+    font-family: 'Rubik Dirt', cursive;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 45px;
+    border: 1px solid #141414;
+    border-radius: 5px;
+    outline: none;
+    background: #f5f5f5;
+    color: #000000;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .button {
+    position: absolute; 
+    top: 0;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: #000000;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+  }
+  .button:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 15px;
+    color: #15dbc1;
+  }
+
+  .req{
+    font-size: 20px;
+  }
+
+
+  /*MAIN*/
+
+
+  main{
+    display: flex;
+    width: 90%;
+    height: 1400px;
+    margin-top: 150px;
+    margin: 150px 100px 0 100px;
+    padding-top: 50px;
+    background-color: #f3f3f3;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.74);
+    justify-content: center;
+  }
+
+  /*Michael Jackson*/
+
+  .jackson{
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 350px;
+    height: 380px;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.74);
+    float: left;
+    float: bottom;
+    border-radius: 5px;
+    transition: all.6s ease;
+    margin-left: 20px;
+  }
+
+  .jackson:hover{
+    transform: scale(1.05, 1.05);
+  }
+
+  .photo-j{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .text-j{
+    margin: 0 30px;   
+  }
+
+  .text-j a:hover{
+    color: #000000;
+  }
+
+  
